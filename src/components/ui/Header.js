@@ -19,7 +19,7 @@ function ElevationScroll(props) {
 export const Header = (props) => {
   return (
     <ElevationScroll>
-        <AppBar position='fixed'>
+        <AppBar position='fixed' color="secondary">
             <Toolbar>
                 BoardGame Swap
             </Toolbar>
