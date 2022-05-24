@@ -2,7 +2,9 @@ import React from 'react'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Typography from '@mui/material/Typography';
+import logo from '../../assets/logo.svg';
+import './Header.css';
+
 
 function ElevationScroll(props) {
     const { children} = props;
@@ -21,10 +23,8 @@ export const Header = (props) => {
   return (
     <ElevationScroll>
         <AppBar position='fixed' color="secondary">
-            <Toolbar>
-                <Typography variant='h3' color='error'>
-                    BoardGame Swap
-                </Typography>
+            <Toolbar disableGutters>
+            <img alt="company log" src={logo} className="svg_icons" />
             </Toolbar>
         </AppBar>
     </ElevationScroll>
